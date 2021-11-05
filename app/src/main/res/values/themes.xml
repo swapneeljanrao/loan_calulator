@@ -3,7 +3,7 @@
     <style name="Theme.Loan_calulator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">#FFFF00</item>
-        <item name="colorPrimaryVariant">#5252CD</item>
+        <item name="colorPrimaryVariant">#5CD9F6</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

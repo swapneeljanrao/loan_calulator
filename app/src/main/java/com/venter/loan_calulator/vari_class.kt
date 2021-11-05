@@ -5,4 +5,4 @@ import java.util.*
 
 val MY_TAG:String="My_tag"
 
-val exp_date: LocalDate? = LocalDate.parse("2021-11-07")
+val exp_date: LocalDate? = LocalDate.parse("2021-11-20")

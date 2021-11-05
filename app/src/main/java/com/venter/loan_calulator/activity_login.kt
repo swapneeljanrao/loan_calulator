@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_login.*
 import java.time.LocalDate
 
 class activity_login : AppCompatActivity() {
@@ -12,19 +13,23 @@ class activity_login : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        try
-        {
-
-            val d1= LocalDate.now()
-            if(d1.compareTo(exp_date)<=0)
+        btn_login_login.setOnClickListener {
+            try
             {
-                var  logcall = Intent(this, activity_dashboard::class.java)
-                startActivity(logcall)
+
+                val d1= LocalDate.now()
+                if(d1.compareTo(exp_date)<=0)
+                {
+                    var  logcall = Intent(this, activity_dashboard::class.java)
+                    startActivity(logcall)
+                }
             }
+            catch (e:Exception)
+            {
+                Log.d(MY_TAG,"Error in Log in button Log In page. "+e.message)
+            }
+
         }
-        catch (e:Exception)
-        {
-            Log.d(MY_TAG,"   "+e.message)
-        }
+
     }
 }

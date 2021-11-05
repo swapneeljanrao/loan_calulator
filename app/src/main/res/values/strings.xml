@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Loan Calculator</string>
+    <string name="gold_mortage_dash">Gold Loan</string>
+    <string name="personal_loan_dash">Personal Loan</string>
 </resources>
