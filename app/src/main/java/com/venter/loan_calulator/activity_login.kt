@@ -30,6 +30,10 @@ class activity_login : AppCompatActivity() {
             }
 
         }
+        btn_SignUp_login.setOnClickListener {
+            var  logcall = Intent(this, activity_mobveri::class.java)
+            startActivity(logcall)
+        }
 
     }
 }

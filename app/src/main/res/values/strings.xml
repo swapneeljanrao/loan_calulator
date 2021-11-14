@@ -1,5 +1,13 @@
 <resources>
-    <string name="app_name">Loan Calculator</string>
+    <string name="app_name">Gold Ledger</string>
     <string name="gold_mortage_dash">Gold Loan</string>
     <string name="personal_loan_dash">Personal Loan</string>
+    <string-array name="forgotpass_que">
+        <item>Technical Issue</item>
+        <item>Support Issue</item>
+        <item>Sales Issue</item>
+        <item>Inquiry</item>
+        <item>Other</item>
+    </string-array>
+
 </resources>

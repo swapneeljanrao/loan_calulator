@@ -10,6 +10,33 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loan_calulator">
         <activity
+            android:name=".activity_client_edit"
+            android:exported="true" />
+        <activity
+            android:name=".activity_vendor_edit"
+            android:exported="true" />
+        <activity
+            android:name=".activity_vendor_add"
+            android:exported="true" />
+        <activity
+            android:name=".activity_client_add"
+            android:exported="true" />
+        <activity
+            android:name=".activity_vendormaster"
+            android:exported="true" />
+        <activity
+            android:name=".activity_clintmaster"
+            android:exported="true" />
+        <activity
+            android:name=".activity_buyplan"
+            android:exported="true" />
+        <activity
+            android:name=".activity_mobveri"
+            android:exported="true" />
+        <activity
+            android:name=".activity_signup"
+            android:exported="true" />
+        <activity
             android:name=".activity_dashboard"
             android:exported="true" />
         <activity

@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Loan_calulator" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#FFFF00</item>
+        <item name="colorPrimary">#5CD9F6</item>
         <item name="colorPrimaryVariant">#5CD9F6</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
