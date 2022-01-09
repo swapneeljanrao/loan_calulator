@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_login"
-    android:background="@drawable/back_grad">
+    android:background="@drawable/background"
+    tools:context=".activity_login">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -29,10 +30,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="20dp"
                     android:layout_marginEnd="0dp"
-                    android:src="@drawable/v_logo_yellow"
-                    />
-
-
+                    android:src="@drawable/v_logo_yellow" />
 
 
             </LinearLayout>
@@ -41,72 +39,72 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Mobile No : "
                     android:textColor="@color/white"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <EditText
+                    android:id="@+id/edttxt_mobileno_login"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:defaultFocusHighlightEnabled="true"
+                    android:focusable="true"
+                    android:hint="Mobile No"
                     android:inputType="number"
                     android:maxLength="10"
                     android:textColor="@color/white"
+                    android:textColorHint="@color/white"
                     android:textSize="25sp"
-                    android:id="@+id/edttxt_mobileno_login"
-                    android:hint="Mobile No"
-                    android:defaultFocusHighlightEnabled="true"
-                    android:textColorHint="#F4F4F8"
-                    android:focusable="true"
                     tools:ignore="SpeakableTextPresentCheck" />
 
-
-
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Password : "
                     android:textColor="@color/white"
-                    android:textSize="20sp"/>
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/edttxt_otp_login"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:defaultFocusHighlightEnabled="true"
+                    android:hint="Password"
                     android:inputType="number"
                     android:maxLength="6"
                     android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:hint="Password"
-                    android:defaultFocusHighlightEnabled="true"
                     android:textColorHint="@color/white"
+                    android:textSize="25sp"
                     tools:ignore="SpeakableTextPresentCheck" />
 
 
-
             </LinearLayout>
+
             <LinearLayout
+                android:id="@+id/linview_otp_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:id="@+id/linview_otp_login"
                 android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
                 android:orientation="vertical">
-
 
 
                 <TextView
@@ -114,15 +112,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
+                    android:gravity="center"
                     android:text="Forgot Password"
                     android:textColor="@color/white"
-                    android:gravity="center"
-                    android:textSize="20sp"
-                    />
+                    android:textSize="20sp" />
 
             </LinearLayout>
 
             <Button
+                android:id="@+id/btn_login_login"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
@@ -130,8 +128,7 @@
                 android:layout_marginRight="20dp"
                 android:background="@drawable/log_btn"
                 android:text="Log In"
-                android:textColor="#FFFFFF"
-                android:id="@+id/btn_login_login"
+                android:textColor="@color/white"
                 android:textSize="20sp"
                 tools:ignore="TextContrastCheck" />
 
@@ -140,15 +137,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center"
                 android:text="Create an Account"
                 android:textColor="@color/white"
-                android:gravity="center"
-                android:textSize="20sp"
-                android:layout_marginBottom="50dp"
-                />
+                android:textSize="20sp" />
 
         </LinearLayout>
     </ScrollView>
-
 
 </LinearLayout>

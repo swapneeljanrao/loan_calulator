@@ -4,19 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_client_add"
-    android:background="@drawable/back_grad"
-    android:orientation="vertical">
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activity_client_add">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Client Details"
-        android:gravity="center"
         android:fontFamily="sans-serif-black"
-        android:textColor="@color/black"
-        android:textSize="40sp"/>
+        android:gravity="center"
+        android:text="Client Details"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -33,173 +33,190 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Client Name:"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:hint="Client Name"/>
+                android:hint="Client Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Client Address:"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:hint="Client Address"/>
+                android:hint="Client Address"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Mobile No.:"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
+                android:hint="Mobile No"
                 android:inputType="number"
-                android:textColorHint="@color/black"
                 android:maxLength="10"
-                android:hint="Mobile No"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Occupation:"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:text="Occupation:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Agriculture"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Non Agriculture"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
             </RadioGroup>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Is client from backword class?:"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:text="Is client from backword class?:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <RadioGroup
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Yes"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
                 <RadioButton
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="No"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
             </RadioGroup>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Client Documents:"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="0.5"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:hint="Doument Name"/>
-                <Button
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="5dp"
-                    android:layout_weight="0.4"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:text="Upload"/>
+                android:text="Client Documents:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
-            </LinearLayout>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.5"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:hint="Document Name"
+                    android:textColor="@color/white"
                     android:textColorHint="@color/white"
-                    android:text="Doument Name"/>
+                    android:textSize="20sp" />
+
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.4"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:backgroundTint="#FEBD23"
+                    android:background="@drawable/log_btn"
                     android:text="Upload"
-                    />
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.5"
+                    android:text="Document Name"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.4"
+                    android:backgroundTint="#FEBD23"
+                    android:text="Upload"
+                    android:background="@drawable/log_btn"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="50dp"
-                android:text="Add Client"/>
-
-
-
+                android:background="@drawable/log_btn"
+                android:backgroundTint="#FEBD23"
+                android:textColor="@color/white"
+                android:text="Add Client" />
 
 
         </LinearLayout>

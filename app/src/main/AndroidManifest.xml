@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Loan_calulator">
         <activity
+            android:name=".activity_clientledger"
+            android:exported="false" />
+        <activity
             android:name=".activity_client_edit"
             android:exported="true" />
         <activity

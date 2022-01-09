@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_vendor_edit"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    android:background="@drawable/back_grad">
+    tools:context=".activity_vendor_edit">
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:text="Update Vendor Details"
-        android:gravity="center"
         android:fontFamily="sans-serif-black"
-        android:textColor="@color/black"
-        android:textSize="30sp"/>
+        android:gravity="center"
+        android:text="Update Vendor Details"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -33,148 +34,163 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Firm Name:"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
 
             <androidx.appcompat.widget.AppCompatSpinner
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
                 android:layout_marginTop="5dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
                 android:textSize="20sp"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Vendor Name:"
-                android:textColor="@color/black"
-                android:layout_marginTop="10dp"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:hint="Vendor Name"/>
+                android:hint="Vendor Name"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Lic. No.:"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:hint="Lic. No."/>
+                android:hint="Lic. No."
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Vendor Address:"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/black"
-                android:hint="Vendor Address"/>
+                android:hint="Vendor Address"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="Mobile No.:"
-                android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
-                android:textSize="20sp"
-                android:textColor="@color/black"
+                android:hint="Mobile No"
                 android:inputType="number"
-                android:textColorHint="@color/black"
                 android:maxLength="10"
-                android:hint="Mobile No"/>
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Vendor Documents:"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"/>
+                android:text="Vendor Documents:"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.5"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:hint="Doument Name"/>
+                    android:hint="Document Name"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
+
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.4"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:text="Upload"/>
+                    android:background="@drawable/log_btn"
+                    android:backgroundTint="#F57C23"
+                    android:text="Upload"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <EditText
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.5"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:text="Doument Name"/>
+                    android:text="Document Name"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
+
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.4"
-                    android:layout_marginLeft="20dp"
-                    android:textSize="20sp"
-                    android:textColor="@color/black"
-                    android:textColorHint="@color/black"
-                    android:hint="Upload"/>
-
+                    android:background="@drawable/log_btn"
+                    android:backgroundTint="#F57C23"
+                    android:hint="UPLOAD"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="20sp" />
             </LinearLayout>
+
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="50dp"
-                android:text="Update Vendor"/>
-
-
-
-
-
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#F57C23"
+                android:background="@drawable/log_btn"
+                android:text="Update Vendor"
+                android:textColor="@color/white" />
         </LinearLayout>
     </ScrollView>
 

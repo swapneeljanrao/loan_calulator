@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_dashboard"
-    android:background="@drawable/back_grad"
-    android:orientation="vertical">
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".activity_dashboard">
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/dash_bord"
@@ -53,72 +53,64 @@
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
-                                <ImageView
-                                    android:id="@+id/valvelogo_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/gold_mortage" />
+                            <ImageView
+                                android:id="@+id/valvelogo_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/gold_mortage" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/valvelogo_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:textColor="@color/white"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="@string/gold_mortage_dash"
-                                    android:textSize="16sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/valvelogo_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/gold_mortage_dash"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
 
-
-                            </RelativeLayout>
-
+                        </RelativeLayout>
 
 
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
-                                <ImageView
-                                    android:id="@+id/waterpumplogo_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/peronal_loan" />
+                            <ImageView
+                                android:id="@+id/waterpumplogo_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/peronal_loan" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/waterpumplogo_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:textColor="@color/white"
-                                    android:text="@string/personal_loan_dash"
-                                    android:textSize="16sp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/waterpumplogo_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="@string/personal_loan_dash"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
 
-
-                            </RelativeLayout>
-
-
-
-
-
+                        </RelativeLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -128,79 +120,69 @@
                         android:orientation="horizontal">
 
 
+                        <RelativeLayout
+                            android:id="@+id/rview_client_dashboard"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:layout_gravity="center"
-                                android:id="@+id/rview_client_dashboard"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
+                            <ImageView
+                                android:id="@+id/clinet_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/ledger_book" />
 
-                                <ImageView
-                                    android:id="@+id/clinet_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/ledger_book" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/clinet_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:textColor="@color/white"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="Client Ledger"
-                                    android:textSize="16sp" />
-
-
-                            </RelativeLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/clinet_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Client Ledger"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
 
 
+                        </RelativeLayout>
 
 
                         <!--- Water Pump Button -->
 
 
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:id="@+id/rview_vendor_dashboard"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
+                        <RelativeLayout
+                            android:id="@+id/rview_vendor_dashboard"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
-                                <ImageView
-                                    android:id="@+id/vendor_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/vendor_vector" />
+                            <ImageView
+                                android:id="@+id/vendor_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/vendor_vector" />
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/vendor_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:textColor="@color/white"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="Vendor Ledger"
-                                    android:textSize="16sp" />
-
-
-                            </RelativeLayout>
-
-
-
-
-
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/vendor_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Vendor Ledger"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+                        </RelativeLayout>
                     </LinearLayout>
 
                     <LinearLayout
@@ -209,81 +191,73 @@
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
+
+                            <ImageView
+                                android:id="@+id/cal_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/loan_cal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/cal_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Loan Calculator"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
 
 
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
-
-                                <ImageView
-                                    android:id="@+id/cal_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/loan_cal" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/cal_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="Loan Calculator"
-                                    android:textColor="@color/white"
-                                    android:textSize="16sp" />
+                        </RelativeLayout>
 
 
-                            </RelativeLayout>
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
+
+                            <ImageView
+                                android:id="@+id/rpt_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/report_vector" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/rpt_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Reports"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
 
 
-
-
-
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
-
-                                <ImageView
-                                    android:id="@+id/rpt_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/report_vector" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/rpt_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="Reports"
-                                    android:textColor="@color/white"
-                                    android:textSize="16sp" />
-
-
-                            </RelativeLayout>
-
-
-
+                        </RelativeLayout>
 
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="150dp"
+                        android:layout_height="160dp"
                         android:layout_marginBottom="10dp"
                         android:orientation="horizontal">
 
@@ -293,11 +267,11 @@
                         <RelativeLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:background="#66858080"
                             android:layout_gravity="center"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="5dp"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
                             <ImageView
                                 android:id="@+id/empprof_icon"
@@ -311,9 +285,9 @@
                                 android:layout_height="wrap_content"
                                 android:layout_below="@id/empprof_icon"
                                 android:layout_centerHorizontal="true"
-                                android:layout_marginTop="5dp"
                                 android:layout_marginBottom="10dp"
-                                android:text="Employee Managment"
+                                android:text="Employee\nManagement"
+                                android:textAlignment="center"
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
 
@@ -321,15 +295,14 @@
                         </RelativeLayout>
 
 
-
                         <RelativeLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:background="#66858080"
                             android:layout_gravity="center"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="5dp"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
                             <ImageView
                                 android:id="@+id/expense_icon"
@@ -344,18 +317,15 @@
                                 android:layout_below="@id/expense_icon"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
                                 android:layout_marginBottom="10dp"
                                 android:text="Daily Expenses"
+                                android:textColor="@color/white"
                                 android:textSize="16sp" />
 
 
                         </RelativeLayout>
 
 
-
-
-
                     </LinearLayout>
 
                     <LinearLayout
@@ -365,92 +335,88 @@
                         android:orientation="horizontal">
 
                         <!--- Valve Icon Button -->
-
-
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
-
-                                <ImageView
-                                    android:id="@+id/profile_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/profile" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/profile_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="Profile"
-                                    android:textColor="@color/white"
-                                    android:textSize="16sp" />
-
-
-                            </RelativeLayout>
-
-
-
-                            <RelativeLayout
-                                android:layout_width="0dp"
-                                android:layout_height="match_parent"
-                                android:background="#66858080"
-                                android:layout_gravity="center"
-                                android:layout_marginLeft="5dp"
-                                android:layout_marginRight="5dp"
-                                android:layout_weight="1">
-
-                                <ImageView
-                                    android:id="@+id/notti_icon"
-                                    android:layout_width="60dp"
-                                    android:layout_height="60dp"
-                                    android:layout_centerInParent="true"
-                                    android:src="@drawable/notification_icon" />
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_below="@id/notti_icon"
-                                    android:layout_centerHorizontal="true"
-                                    android:layout_marginTop="5dp"
-                                    android:textColor="@color/white"
-                                    android:layout_marginBottom="10dp"
-                                    android:text="Notifications"
-                                    android:textSize="16sp" />
-
-
-                            </RelativeLayout>
-
-
-
-
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="150dp"
-                        android:layout_marginBottom="10dp"
-                        android:orientation="horizontal">
-                        <!--- Valve Icon Button -->
-
 
 
                         <RelativeLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:background="#66858080"
                             android:layout_gravity="center"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="5dp"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
+
+                            <ImageView
+                                android:id="@+id/profile_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/profile" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/profile_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Profile"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
+
+                            <ImageView
+                                android:id="@+id/notti_icon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_centerInParent="true"
+                                android:src="@drawable/notification_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/notti_icon"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Notifications"
+                                android:textColor="@color/white"
+                                android:textSize="16sp" />
+
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+                        <!--- Valve Icon Button -->
+
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
                             <ImageView
                                 android:id="@+id/sett_icon"
@@ -465,21 +431,22 @@
                                 android:layout_below="@id/sett_icon"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
-                                android:textColor="@color/white"
                                 android:layout_marginBottom="10dp"
                                 android:text="Setting"
+                                android:textColor="@color/white"
                                 android:textSize="16sp" />
 
 
                         </RelativeLayout>
+
                         <RelativeLayout
                             android:layout_width="0dp"
                             android:layout_height="match_parent"
-                            android:background="#66858080"
                             android:layout_gravity="center"
                             android:layout_marginLeft="5dp"
                             android:layout_marginRight="5dp"
-                            android:layout_weight="1">
+                            android:layout_weight="1"
+                            android:background="@drawable/thumbnail_border">
 
                             <ImageView
                                 android:id="@+id/help_icon"
@@ -498,21 +465,10 @@
                                 android:text="Help"
                                 android:textColor="@color/white"
                                 android:textSize="16sp" />
-
-
                         </RelativeLayout>
-
-
                     </LinearLayout>
-
-
                 </LinearLayout>
-
             </RelativeLayout>
-
-
         </ScrollView>
     </RelativeLayout>
-
-
 </LinearLayout>

@@ -9,9 +9,10 @@ import android.util.Log
 import java.time.LocalDate
 
 class MainActivity : AppCompatActivity() {
+    var v = 0
     override fun onCreate(savedInstanceState: Bundle?)
     {
-        super.onCreate(savedInstanceState)
+        super.onCreate(savedInstanceState)  //main activity
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
         Handler().postDelayed(
@@ -29,6 +30,7 @@ class MainActivity : AppCompatActivity() {
                 }
                 catch (e:Exception)
                 {
+                    //Log prints here
                     Log.d(MY_TAG,"Erro is in..."+e.message)
                 }
 
