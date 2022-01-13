@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:orientation="vertical"
+    android:tag="HI"
     tools:context=".activity_vendormaster">
 
     <TextView
