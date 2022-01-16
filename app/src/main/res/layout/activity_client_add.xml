@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background"
+    android:background="#D8FAF9F9"
     android:orientation="vertical"
     tools:context=".activity_client_add">
 
@@ -15,7 +15,7 @@
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="Client Details"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="40sp" />
 
     <ScrollView
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Client Name:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <EditText
@@ -43,8 +43,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:hint="Client Name"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Client Address:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <EditText
@@ -60,8 +60,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:hint="Client Address"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Mobile No.:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <EditText
@@ -79,8 +79,8 @@
                 android:hint="Mobile No"
                 android:inputType="number"
                 android:maxLength="10"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
                 android:textSize="20sp" />
 
             <TextView
@@ -88,7 +88,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Occupation:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <RadioGroup
@@ -101,15 +101,15 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Agriculture"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <RadioButton
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="60dp"
                     android:layout_weight="1"
                     android:text="Non Agriculture"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
             </RadioGroup>
 
@@ -118,7 +118,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Is client from backword class?:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <RadioGroup
@@ -131,7 +131,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Yes"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
 
                 <RadioButton
@@ -139,7 +139,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="No"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
             </RadioGroup>
 
@@ -148,7 +148,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Client Documents:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -161,8 +161,8 @@
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.5"
                     android:hint="Document Name"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
                     android:textSize="20sp" />
 
                 <Button
@@ -172,7 +172,6 @@
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.4"
                     android:backgroundTint="#FEBD23"
-                    android:background="@drawable/log_btn"
                     android:text="Upload"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
@@ -189,8 +188,8 @@
                     android:layout_marginTop="5dp"
                     android:layout_weight="0.5"
                     android:text="Document Name"
-                    android:textColor="@color/white"
-                    android:textColorHint="@color/white"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black"
                     android:textSize="20sp" />
 
                 <Button
@@ -201,7 +200,6 @@
                     android:layout_weight="0.4"
                     android:backgroundTint="#FEBD23"
                     android:text="Upload"
-                    android:background="@drawable/log_btn"
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
@@ -216,6 +214,7 @@
                 android:background="@drawable/log_btn"
                 android:backgroundTint="#FEBD23"
                 android:textColor="@color/white"
+                android:textSize="20sp"
                 android:text="Add Client" />
 
 
