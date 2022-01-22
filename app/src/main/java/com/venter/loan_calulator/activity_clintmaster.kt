@@ -19,6 +19,7 @@ class activity_clintmaster : AppCompatActivity()
         rview_eclient_cmaster.setOnClickListener {
             val aclientcall = Intent(this,activity_client_edit::class.java)
             startActivity(aclientcall)
+            //print
         }
     }
 }
